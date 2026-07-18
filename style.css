@@ -1,1 +1,128 @@
+/* ==========================
+   Rebel Sound Lab
+   Premium Theme v2.0
+========================== */
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:'Poppins',sans-serif;
+
+background:#000;
+
+color:#fff;
+
+line-height:1.7;
+
+overflow-x:hidden;
+
+}
+
+h1,h2,h3,h4{
+
+font-family:'Playfair Display',serif;
+
+}
+
+a{
+
+text-decoration:none;
+
+color:#D4AF37;
+
+transition:.3s;
+
+}
+
+a:hover{
+
+color:#F5E6A9;
+
+}
+
+.navbar{
+
+background:#111;
+
+padding:18px 0;
+
+border-bottom:1px solid rgba(212,175,55,.25);
+
+}
+
+.navbar-brand{
+
+font-size:30px;
+
+font-weight:bold;
+
+color:#D4AF37;
+
+}
+
+.nav-link{
+
+color:white;
+
+margin-left:18px;
+
+}
+
+.nav-link:hover{
+
+color:#D4AF37;
+
+}
+
+.hero{
+
+min-height:100vh;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+text-align:center;
+
+padding:100px 20px;
+
+background:linear-gradient(180deg,#000,#111);
+
+}
+
+.hero h1{
+
+font-size:68px;
+
+margin-bottom:20px;
+
+}
+
+.hero span{
+
+color:#D4AF37;
+
+}
+
+.hero p{
+
+max-width:760px;
+
+margin:auto;
+
+font-size:20px;
+
+opacity:.9;
+
+}
