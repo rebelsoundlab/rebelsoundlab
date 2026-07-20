@@ -1,1 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing | Rebel Sound Lab</title>
 
+<style>
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:#111;
+color:#fff;
+}
+
+header{
+background:#000;
+padding:25px;
+text-align:center;
+}
+
+header h1{
+color:#FFD700;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:40px 20px;
+display:flex;
+flex-wrap:wrap;
+gap:25px;
+justify-content:center;
+}
+
+.card{
+background:#1b1b1b;
+border:2px solid #FFD700;
+border-radius:15px;
+padding:25px;
+width:320px;
+text-align:center;
+box-shadow:0 0 15px rgba(255,215,0,.3);
+}
+
+.card h2{
+color:#FFD700;
+margin-bottom:10px;
+}
+
+.price{
+font-size:36px;
+font-weight:bold;
+margin:15px 0;
+}
+
+.card ul{
+list-style:none;
+padding:0;
+line-height:2;
+}
+
+.popular{
+background:#FFD700;
+color:#000;
+display:inline-block;
+padding:6px 14px;
+border-radius:20px;
+font-weight:bold;
+margin-bottom:15px;
+}
+
+.secure{
+text-align:center;
+padding:40px 20px;
+}
+
+.secure h2{
+color:#FFD700;
+}
+</style>
+
+<script src="https://www.paypal.com/sdk/js?client-id=BAAER-Z2Nn39IO9M4CZfrDTqPEG-kzJinPYb2T_YTesapteCPvSIxA4yOC8DEt3sLxRHdbpx-WZ9w4lT9A&components=hosted-buttons&disable-funding=venmo&currency=USD"></script>
+
+</head>
+
+<body>
+
+<header>
+<h1>Premium Pricing</h1>
+<p>Choose the package that fits your music project.</p>
+</header>
+
+<div class="container">
+
+<div class="card">
+<h2>Basic Package</h2>
+<div class="price">$19.99</div>
+
+<ul>
+<li>1 Original Song Lyrics</li>
+<li>AI Song Version 1</li>
+<li>AI Song Version 2</li>
+<li>Commercial Use License</li>
+<li>Delivery 1–2 Days</li>
+</ul>
+
+<div id="paypal-container-XQRFMV4Z2XC2W"></div>
+
+<script>
+paypal.HostedButtons({
+hostedButtonId:"XQRFMV4Z2XC2W"
+}).render("#paypal-container-XQRFMV4Z2XC2W");
+</script>
+
+</div>
+
+<div class="card">
+
+<div class="popular">Most Popular</div>
+
+<h2>Standard Package</h2>
+
+<div class="price">$39.99</div>
+
+<ul>
+<li>3 Original Song Lyrics</li>
+<li>AI Song Version 1</li>
+<li>AI Song Version 2</li>
+<li>Commercial Use License</li>
+<li>Delivery 2–4 Days</li>
+</ul>
+
+<div id="paypal-container-M7K22N99PHR4Y"></div>
+
+<script>
+paypal.HostedButtons({
+hostedButtonId:"M7K22N99PHR4Y"
+}).render("#paypal-container-M7K22N99PHR4Y");
+</script>
+
+</div>
+
+<div class="card">
+
+<h2>Premium Package</h2>
+
+<div class="price">$59.99</div>
+
+<ul>
+<li>5 Original Song Lyrics</li>
+<li>AI Song Version 1</li>
+<li>AI Song Version 2</li>
+<li>Commercial Use License</li>
+<li>Priority Delivery 3–5 Days</li>
+</ul>
+
+<div id="paypal-container-UWSKENKMPERUW"></div>
+
+<script>
+paypal.HostedButtons({
+hostedButtonId:"UWSKENKMPERUW"
+}).render("#paypal-container-UWSKENKMPERUW");
+</script>
+
+</div>
+
+</div>
+
+<div class="secure">
+<h2>🔒 Secure Payments</h2>
+
+<p>Pay safely using:</p>
+
+<p><strong>PayPal</strong></p>
+
+<p><strong>Credit & Debit Cards via PayPal</strong></p>
+
+</div>
+
+</body>
+</html>
