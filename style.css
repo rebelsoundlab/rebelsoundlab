@@ -126,3 +126,31 @@ font-size:20px;
 opacity:.9;
 
 }
+
+/* ===== MUSIC PAGE ===== */
+
+.music-container{
+    max-width:800px;
+    margin:60px auto;
+    padding:20px;
+    text-align:center;
+}
+
+.music-card{
+    background:#181818;
+    border:1px solid #333;
+    border-radius:15px;
+    padding:25px;
+    margin:30px auto;
+    box-shadow:0 0 20px rgba(0,0,0,.5);
+}
+
+.music-card h2{
+    color:#D4AF37;
+    margin-bottom:20px;
+}
+
+.music-card audio{
+    width:100%;
+    max-width:500px;
+}
