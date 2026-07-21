@@ -164,3 +164,27 @@ opacity:.9;
     width:100%;
     max-width:500px;
 }
+
+.navbar .container{
+    display:flex;
+    align-items:center;
+}
+
+.navbar-collapse{
+    display:flex !important;
+    flex-grow:1;
+}
+
+.navbar-nav{
+    margin-left:auto;
+    display:flex;
+    flex-direction:row;
+}
+
+.nav-item{
+    list-style:none;
+}
+
+.nav-link{
+    padding:0 12px;
+}
