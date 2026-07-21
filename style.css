@@ -59,14 +59,24 @@ border-bottom:1px solid rgba(212,175,55,.25);
 
 }
 
+.navbar-nav{
+    display:flex;
+    align-items:center;
+    margin-left:auto;
+}
 .navbar-brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:30px;
+    font-weight:bold;
+    color:#D4AF37;
+}
 
-font-size:30px;
-
-font-weight:bold;
-
-color:#D4AF37;
-
+.navbar-brand img{
+    width:50px;
+    height:50px;
+    object-fit:contain;
 }
 
 .nav-link{
