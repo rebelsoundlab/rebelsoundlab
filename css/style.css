@@ -74,15 +74,23 @@ header h1 {
   margin-bottom: 15px;
 }
 
-/* ===== HIDE PAYPAL DESCRIPTION TEXT ===== */
-[id^="paypal-container-"] {
-  font-size: 0 !important;
+/* Hides PayPal's injected title/description text */
+#paypal-container-XQRFMV4Z2XC2W > *:not(.paypal-button),
+#paypal-container-M7K22N99PHR4Y > *:not(.paypal-button),
+#paypal-container-UWSKENKMPERUW > *:not(.paypal-button),
+#paypal-container-BUSINESS > *:not(.paypal-button),
+#paypal-container-SKSYSJV6KHZPN > *:not(.paypal-button) {
+    display: none !important;
 }
 
+/* Collapses text spacing inside PayPal divs */
+[id^="paypal-container-"] {
+    font-size: 0 !important;
+}
+[id^="paypal-container-"] .paypal-button,
 [id^="paypal-container-"] iframe,
-[id^="paypal-container-"] button,
-[id^="paypal-container-"] .paypal-button {
-  font-size: initial !important;
+[id^="paypal-container-"] button {
+    font-size: initial !important;
 }
 
 /* ===== SECURE PAYMENTS SECTION ===== */
