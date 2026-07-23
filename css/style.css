@@ -102,3 +102,41 @@ header h1 {
 .secure h2 {
   color: #FFD700;
 }
+
+/* ===== HERO SECTION ===== */
+
+.hero h1{
+    font-size: clamp(42px, 6vw, 60px);
+    font-weight:700;
+    color:#ffffff;
+    margin-bottom:15px;
+}
+
+.hero h1 span{
+    color:#FFD700;
+}
+
+.hero h2{
+    font-size: clamp(24px, 3vw, 32px);
+    font-weight:600;
+    color:#ffffff;
+    margin-bottom:20px;
+}
+
+.hero h2 span{
+    color:#FFD700;
+}
+
+.hero .lead{
+    font-size:20px;
+    color:#dddddd;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:18px;
+    color:#cccccc;
+    max-width:850px;
+    margin:0 auto 25px;
+    line-height:1.8;
+}
