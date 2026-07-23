@@ -140,3 +140,29 @@ header h1 {
     margin:0 auto 25px;
     line-height:1.8;
 }
+
+/* ===== LYRICS PAGE ===== */
+
+.lyrics-container{
+    max-width:800px;
+    margin:0 auto;
+    padding:80px 20px;
+}
+
+.lyrics-container h1{
+    font-size:42px;
+    color:#FFD700;
+    margin-bottom:10px;
+}
+
+.lyrics-container h2{
+    color:#ffffff;
+    margin-bottom:20px;
+}
+
+.lyrics-container p,
+.lyrics-container pre{
+    color:#dddddd;
+    font-size:18px;
+    line-height:1.8;
+}
