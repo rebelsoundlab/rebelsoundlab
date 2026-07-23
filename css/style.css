@@ -1,1 +1,96 @@
+/* ============================================
+   Rebel Sound Lab - Main Stylesheet
+   ============================================ */
 
+/* ===== BASE ===== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #fff;
+}
+
+/* ===== HEADER ===== */
+header {
+  background: #000;
+  padding: 25px;
+  text-align: center;
+}
+
+header h1 {
+  color: #FFD700;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  max-width: 1600px;
+  margin: auto;
+  padding: 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+/* ===== PRICING CARDS ===== */
+.card {
+  background: #1b1b1b;
+  border: 2px solid #FFD700;
+  border-radius: 15px;
+  padding: 25px;
+  width: 320px;
+  min-height: 560px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card h2 {
+  color: #FFD700;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  line-height: 2;
+}
+
+.popular {
+  background: #FFD700;
+  color: #000;
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* ===== HIDE PAYPAL DESCRIPTION TEXT ===== */
+[id^="paypal-container-"] {
+  font-size: 0 !important;
+}
+
+[id^="paypal-container-"] iframe,
+[id^="paypal-container-"] button,
+[id^="paypal-container-"] .paypal-button {
+  font-size: initial !important;
+}
+
+/* ===== SECURE PAYMENTS SECTION ===== */
+.secure {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.secure h2 {
+  color: #FFD700;
+}
