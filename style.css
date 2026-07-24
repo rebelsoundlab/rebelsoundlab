@@ -92,20 +92,36 @@ color:#D4AF37;
 }
 
 .hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:100px 20px;
 
-min-height:100vh;
+    background:
+        linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.75)),
+        url("hero-banner.webp") center center / cover no-repeat;
+}
 
-display:flex;
+@media (max-width:768px){
 
-align-items:center;
+.hero{
+    background:
+        linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.75)),
+        url("hero-mobile.webp") center center / cover no-repeat;
 
-justify-content:center;
+    min-height:100vh;
+    padding:90px 20px 60px;
+}
 
-text-align:center;
+.hero h1{
+    font-size:42px;
+}
 
-padding:100px 20px;
-
-background:linear-gradient(180deg,#000,#111);
+.hero p{
+    font-size:16px;
+}
 
 }
 
