@@ -59,3 +59,35 @@ if (topButton) {
         });
     });
 }
+
+// ===== Rebel Sound Lab Song Template =====
+
+function copyLyrics() {
+
+    const lyrics = document.getElementById("lyrics").innerText;
+
+    navigator.clipboard.writeText(lyrics);
+
+    alert("Lyrics copied successfully!");
+
+}
+
+function shareSong() {
+
+    if (navigator.share) {
+
+        navigator.share({
+            title: document.title,
+            text: "Check out this original song from Rebel Sound Lab!",
+            url: window.location.href
+        });
+
+    } else {
+
+        navigator.clipboard.writeText(window.location.href);
+
+        alert("Song link copied!");
+
+    }
+
+}
