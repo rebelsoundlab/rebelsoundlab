@@ -198,3 +198,74 @@
     filter:invert(1);
 }
 }
+
+/* ===== SONG TEMPLATE ===== */
+
+.song-card{
+    background:#111;
+    border:1px solid #D4AF37;
+    border-radius:18px;
+    padding:40px;
+    box-shadow:0 0 25px rgba(212,175,55,.15);
+}
+
+.song-title{
+    font-family:'Playfair Display',serif;
+    font-size:3rem;
+    color:#D4AF37;
+    margin-bottom:15px;
+}
+
+.song-credit{
+    color:#ddd;
+    font-size:1.05rem;
+    line-height:1.8;
+}
+
+.song-credit strong{
+    color:#fff;
+}
+
+.lyrics-text{
+    background:#0b0b0b;
+    border:1px solid #333;
+    border-radius:12px;
+    padding:25px;
+    color:#fff;
+    font-family:Consolas,monospace;
+    font-size:1.05rem;
+    line-height:2;
+    white-space:pre-wrap;
+    word-break:break-word;
+    overflow-wrap:break-word;
+}
+
+audio{
+    border-radius:10px;
+}
+
+footer{
+    color:#999;
+}
+
+@media (max-width:768px){
+
+.song-card{
+    padding:20px;
+}
+
+.song-title{
+    font-size:2rem;
+}
+
+.song-credit{
+    font-size:.95rem;
+}
+
+.lyrics-text{
+    font-size:.95rem;
+    line-height:1.8;
+    padding:18px;
+}
+
+}
