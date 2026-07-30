@@ -162,30 +162,30 @@ Rebel Sound Lab creates original music, professionally written lyrics, AI-powere
     </div>
 
 </section>
-
-    <!-- Footer -->
+  
+<!-- Footer -->
 <footer class="text-center py-5">
 
     <div class="container">
 
-<div class="mb-3">
-    <a href="privacy.html" class="text-decoration-none text-warning">
-        Privacy Policy
-    </a>
+        <div class="mb-3">
+            <a href="privacy.html" class="text-decoration-none text-warning">
+                Privacy Policy
+            </a>
 
-    <span class="text-secondary mx-2">|</span>
+            <span class="text-secondary mx-2">|</span>
 
-    <a href="terms.html" class="text-decoration-none text-warning">
-        Terms &amp; Conditions
-    </a>
-</div>
-        
+            <a href="terms.html" class="text-decoration-none text-warning">
+                Terms &amp; Conditions
+            </a>
+        </div>
+
         <p class="mb-2">
-            © 2026 Rebel Sound Lab. All Rights Reserved.
+            © <span id="year"></span> Rebel Sound Lab. All Rights Reserved.
         </p>
 
         <p class="text-secondary">
-            Original Music • Lyrics • AI Music Production • Website Design
+            Original Music • Original Lyrics • AI Music Production • Professional Website Design
         </p>
 
     </div>
@@ -194,7 +194,11 @@ Rebel Sound Lab creates original music, professionally written lyrics, AI-powere
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-  <script type="application/ld+json">
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+<script type="application/ld+json">
 {
   "@context":"https://schema.org",
   "@type":"Organization",
@@ -204,13 +208,5 @@ Rebel Sound Lab creates original music, professionally written lyrics, AI-powere
 }
 </script>
 
-  <p class="mb-2">
-© <span id="year"></span> Rebel Sound Lab. All Rights Reserved.
-</p>
-
-<script>
-document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-    
 </body>
 </html>
