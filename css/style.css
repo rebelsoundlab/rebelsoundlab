@@ -162,10 +162,13 @@
     display:flex;
     align-items:center;
     gap:12px;
-    color:#fff !important;
     font-size:2rem;
     font-weight:700;
     text-decoration:none;
+}
+
+.navbar-brand span{
+    color:#FFD700 !important;
 }
 
 .navbar-brand .brand-name{
