@@ -167,13 +167,12 @@
     align-items:center;
     gap:12px;
     color:#fff !important;
-    font-size:2rem;
-    font-weight:700;
     text-decoration:none;
 }
 
 .navbar-brand .brand-name{
-    color:#FFD700;
+    color:#FFD700 !important;
+    font-weight:700;
 }
 
 .navbar-brand img{
