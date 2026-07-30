@@ -184,3 +184,26 @@ padding:70px 0;
 
 }
 
+<div class="hero-buttons">
+
+    <a href="music.html" class="btn btn-warning">
+        Listen Now
+    </a>
+
+    <a href="pricing.html" class="btn btn-outline-light">
+        View Services
+    </a>
+
+</div>
+
+<div class="hero-buttons">
+
+    <a href="music.html" class="btn-gold">
+        Listen Now
+    </a>
+
+    <a href="pricing.html" class="btn-outline">
+        View Services
+    </a>
+
+</div>
