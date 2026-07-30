@@ -166,10 +166,14 @@
     display:flex;
     align-items:center;
     gap:12px;
-    color:#FFD700 !important;
+    color:#fff !important;
     font-size:2rem;
     font-weight:700;
     text-decoration:none;
+}
+
+.navbar-brand .brand-name{
+    color:#FFD700;
 }
 
 .navbar-brand img{
@@ -196,7 +200,6 @@
 
 .navbar-toggler-icon{
     filter:invert(1);
-}
 }
 
 /* ===== SONG TEMPLATE ===== */
