@@ -1,260 +1,186 @@
-/* ==========================
-   Rebel Sound Lab
-   Premium Theme v2.0
-========================== */
+/* =====================================================
+   Rebel Sound Lab - Premium Theme v3.0
+   ===================================================== */
 
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+/* Reset */
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 html{
-scroll-behavior:smooth;
+    scroll-behavior:smooth;
+}
+
+:root{
+    --bg:#000000;
+    --bg2:#111111;
+    --card:rgba(255,255,255,.06);
+    --gold:#D4AF37;
+    --gold-light:#F5E6A9;
+    --white:#ffffff;
+    --text:#d8d8d8;
+    --border:rgba(255,255,255,.08);
+    --shadow:0 10px 30px rgba(0,0,0,.45);
 }
 
 body{
-
-font-family:'Poppins',sans-serif;
-
-background:#000;
-
-color:#fff;
-
-overflow-x:hidden;
-
+    font-family:'Poppins',sans-serif;
+    background:var(--bg);
+    color:var(--white);
+    line-height:1.7;
+    overflow-x:hidden;
 }
 
-h1,h2,h3,h4{
-
-font-family:'Playfair Display',serif;
-
+/* Scrollbar */
+::-webkit-scrollbar{
+    width:10px;
 }
 
+::-webkit-scrollbar-track{
+    background:#111;
+}
+
+::-webkit-scrollbar-thumb{
+    background:var(--gold);
+    border-radius:20px;
+}
+
+/* Links */
 a{
-
-text-decoration:none;
-
-color:#D4AF37;
-
-transition:.3s;
-
+    color:inherit;
+    text-decoration:none;
+    transition:.3s;
 }
 
 a:hover{
-
-color:#F5E6A9;
-
+    color:var(--gold);
 }
 
-.navbar{
-
-background:#111;
-
-padding:18px 0;
-
-border-bottom:1px solid rgba(212,175,55,.25);
-
+/* Images */
+img{
+    max-width:100%;
+    display:block;
 }
 
-.navbar-nav{
-    display:flex;
-    align-items:center;
-    margin-left:auto;
-}
-.navbar-brand{
-    display:flex;
-    align-items:center;
-    gap:10px;
-    font-size:30px;
-    font-weight:bold;
-    color:#D4AF37;
+/* Container */
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
 }
 
-.navbar-brand img{
-    width:50px;
-    height:50px;
-    object-fit:contain;
+/* Sections */
+section{
+    padding:90px 0;
 }
 
-.nav-link{
-
-color:white;
-
-margin-left:18px;
-
+/* Titles */
+.section-title{
+    font-family:'Playfair Display',serif;
+    font-size:2.6rem;
+    text-align:center;
+    color:var(--gold);
+    margin-bottom:15px;
 }
 
-.nav-link:hover{
-
-color:#D4AF37;
-
+.section-subtitle{
+    text-align:center;
+    color:var(--text);
+    max-width:700px;
+    margin:0 auto 50px;
 }
 
+/* Buttons */
+.btn-gold{
+    display:inline-block;
+    padding:14px 34px;
+    background:var(--gold);
+    color:#000;
+    border-radius:40px;
+    font-weight:600;
+    transition:.35s;
+}
+
+.btn-gold:hover{
+    background:var(--gold-light);
+    transform:translateY(-3px);
+}
+
+.btn-outline{
+    display:inline-block;
+    padding:14px 34px;
+    border:2px solid var(--gold);
+    color:var(--gold);
+    border-radius:40px;
+    transition:.35s;
+}
+
+.btn-outline:hover{
+    background:var(--gold);
+    color:#000;
+}
+
+/* Cards */
+.card{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:18px;
+    padding:30px;
+    backdrop-filter:blur(12px);
+    box-shadow:var(--shadow);
+    transition:.35s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    border-color:var(--gold);
+}
+
+/* Hero */
 .hero{
     min-height:100vh;
     display:flex;
     align-items:center;
     justify-content:center;
     text-align:center;
-    padding:100px 20px;
-
     background:
-        linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.75)),
-        url("hero-banner.webp") center center / cover no-repeat;
-}
-
-@media (max-width:768px){
-
-.hero{
-    background:
-        linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.75)),
-        url("hero-mobile.webp") center center / cover no-repeat;
-
-    min-height:100vh;
-    padding:90px 20px 60px;
+    linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.8)),
+    url("../hero-banner.webp") center/cover no-repeat;
 }
 
 .hero h1{
-    font-size:42px;
-}
-
-.hero p{
-    font-size:16px;
-}
-
-}
-
-.hero h1{
-
-font-size:68px;
-
-margin-bottom:20px;
-
-}
-
-.hero span{
-
-color:#D4AF37;
-
-}
-
-.hero p{
-
-max-width:760px;
-
-margin:auto;
-
-font-size:20px;
-
-opacity:.9;
-
-}
-
-/* ===== MUSIC PAGE ===== */
-
-.music-container{
-    max-width:800px;
-    margin:60px auto;
-    padding:20px;
-    text-align:center;
-}
-
-.music-card{
-    background:#181818;
-    border:1px solid #333;
-    border-radius:15px;
-    padding:25px;
-    margin:30px auto;
-    box-shadow:0 0 20px rgba(0,0,0,.5);
-}
-
-.music-card h2{
-    color:#D4AF37;
+    font-family:'Playfair Display',serif;
+    font-size:4rem;
+    color:var(--gold);
     margin-bottom:20px;
 }
 
-.music-card audio{
-    width:100%;
-    max-width:500px;
+.hero p{
+    color:#ddd;
+    font-size:1.2rem;
+    max-width:700px;
+    margin:auto auto 35px;
 }
 
-/* Desktop only */
-@media (min-width: 992px){
+/* Responsive */
+@media(max-width:768px){
 
-    .navbar-nav{
-        margin-left:auto;
-        align-items:center;
-    }
-
+.hero h1{
+font-size:2.5rem;
 }
 
-/* Mobile */
-@media (max-width:991.98px){
+.section-title{
+font-size:2rem;
+}
 
-    .navbar-brand{
-        font-size:22px;
-    }
-
-    .navbar-brand img{
-        width:42px;
-        height:42px;
-    }
-
-    .navbar-toggler{
-        border:1px solid #D4AF37;
-    }
-
-    .navbar-toggler-icon{
-        filter:invert(1);
-    }
-
-    .navbar-collapse{
-        margin-top:15px;
-    }
-
-    .navbar-nav{
-        flex-direction:column;
-        align-items:flex-start;
-    }
-
-    .nav-link{
-        padding:12px 0;
-        margin-left:0;
-        width:100%;
-    }
+section{
+padding:70px 0;
+}
 
 }
 
-.navbar .container{
-    display:flex;
-    align-items:center;
-}
-
-.nav-item{
-    list-style:none;
-}
-
-.nav-link{
-    padding: 0 12px;
-}
-
-.navbar-brand,
-.navbar-brand span{
-    color:#ffffff !important;
-}
-
-.navbar-brand img{
-    width:50px;
-    height:50px;
-    object-fit:contain;
-}
-
-.nav-link{
-    color:#ffffff !important;
-}
-
-.nav-link:hover,
-.nav-link.active{
-    color:#D4AF37 !important;
-}
