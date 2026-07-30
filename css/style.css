@@ -1,156 +1,4 @@
-/* ===== HERO SECTION ===== */
-
-.hero{
-    position: relative;
-    min-height: 100svh;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    padding: 140px 0 100px;
-
-    background:
-    linear-gradient(
-        90deg,
-        rgba(0,0,0,.72) 0%,
-        rgba(0,0,0,.50) 40%,
-        rgba(0,0,0,.18) 70%,
-        rgba(0,0,0,0) 100%
-    ),
-    url("../hero-banner.webp");
-
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-.hero-content{
-    position:relative;
-    z-index:2;
-    max-width:650px;
-    text-align:left;
-    padding-top:40px;
-}
-
-.hero-tag{
-    display:inline-block;
-    padding:8px 18px;
-    margin-bottom:20px;
-    border:1px solid rgba(255,215,0,.4);
-    border-radius:50px;
-    color:#FFD700;
-    background:rgba(255,255,255,.05);
-    backdrop-filter:blur(10px);
-    font-size:14px;
-    letter-spacing:1px;
-}
-
-.hero h1{
-    font-family:'Playfair Display',serif;
-    font-size:clamp(56px,7vw,84px);
-    font-weight:700;
-    line-height:1.05;
-    margin-bottom:18px;
-}
-
-.hero h2{
-    font-size:clamp(22px,3vw,34px);
-    font-weight:500;
-    color:#fff;
-    margin-bottom:25px;
-}
-
-.hero h2 span{
-    color:#FFD700;
-}
-
-.hero .lead{
-    font-size:20px;
-    color:#E0E0E0;
-    margin-bottom:20px;
-}
-
-.hero p{
-    color:#D0D0D0;
-    font-size:18px;
-    line-height:1.8;
-    margin-bottom:20px;
-}
-
-.hero-buttons{
-    display:flex;
-    gap:15px;
-    flex-wrap:wrap;
-    margin-top:35px;
-}
-
-.hero .btn{
-    padding:14px 30px;
-    border-radius:50px;
-    font-weight:600;
-}
-
-.hero .btn-warning{
-    background:#FFD700;
-    border:none;
-    color:#000;
-}
-
-.hero .btn-warning:hover{
-    background:#e6c200;
-}
-
-.hero .btn-outline-light:hover{
-    color:#000;
-    background:#FFD700;
-    border-color:#FFD700;
-}
-
-/* Mobile */
-
-@media (max-width:768px){
-
-.hero{
-    min-height:100svh;
-    padding:150px 0 80px;
-
-    background:
-    linear-gradient(
-        90deg,
-        rgba(0,0,0,.72) 0%,
-        rgba(0,0,0,.50) 40%,
-        rgba(0,0,0,.18) 70%,
-        rgba(0,0,0,0) 100%
-    ),
-    url("../mobile-studio.webp");
-
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-
-    text-align:center;
-}
-
-.hero-content{
-    max-width:100%;
-    text-align:center;
-    padding-top:0;
-}
-
-.hero h1{
-    font-size:38px;
-    line-height:1.15;
-}
-
-.hero h2{
-    font-size:22px;
-}
-
-.hero p{
-    font-size:16px;
-}
-}
-
-    /* ===== NAVBAR ===== */
+/* ===== NAVBAR ===== */
 
 .navbar{
     background:#111 !important;
@@ -169,22 +17,12 @@
 
 .brand-name{
     color:#FFD700 !important;
+    font-weight:700;
 }
 
 .navbar-brand img{
     width:42px;
     height:42px;
-    object-fit:contain;
-}
-
-.navbar-brand .brand-name{
-    color:#FFD700 !important;
-    font-weight:700;
-}
-
-.navbar-brand img{
-    width:50px;
-    height:50px;
     object-fit:contain;
 }
 
@@ -208,73 +46,29 @@
     filter:invert(1);
 }
 
-/* ===== SONG TEMPLATE ===== */
+/* Music Page */
 
-.song-card{
+.music-container{
+    max-width:1100px;
+    margin:0 auto;
+    padding:120px 20px 60px;
+}
+
+.music-card{
     background:#111;
     border:1px solid #D4AF37;
     border-radius:18px;
-    padding:40px;
-    box-shadow:0 0 25px rgba(212,175,55,.15);
+    padding:30px;
+    margin-bottom:30px;
+    box-shadow:0 0 20px rgba(212,175,55,.12);
 }
 
-.song-title{
-    font-family:'Playfair Display',serif;
-    font-size:3rem;
+.music-card h2{
     color:#D4AF37;
-    margin-bottom:15px;
+    text-align:center;
+    margin-bottom:20px;
 }
 
-.song-credit{
-    color:#ddd;
-    font-size:1.05rem;
-    line-height:1.8;
-}
-
-.song-credit strong{
-    color:#fff;
-}
-
-.lyrics-text{
-    background:#0b0b0b;
-    border:1px solid #333;
-    border-radius:12px;
-    padding:25px;
-    color:#fff;
-    font-family:Consolas,monospace;
-    font-size:1.05rem;
-    line-height:2;
-    white-space:pre-wrap;
-    word-break:break-word;
-    overflow-wrap:break-word;
-}
-
-audio{
-    border-radius:10px;
-}
-
-footer{
-    color:#999;
-}
-
-@media (max-width:768px){
-
-.song-card{
-    padding:20px;
-}
-
-.song-title{
-    font-size:2rem;
-}
-
-.song-credit{
-    font-size:.95rem;
-}
-
-.lyrics-text{
-    font-size:.95rem;
-    line-height:1.8;
-    padding:18px;
-}
-
+.music-card audio{
+    width:100%;
 }
