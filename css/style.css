@@ -189,15 +189,16 @@ padding:70px 0;
 ========================== */
 
 .music-container{
-    padding-top:130px;
-    padding-bottom:80px;
+    max-width:900px;
+    margin:0 auto;
+    padding:140px 20px 80px;
 }
 
 .music-container h1{
     text-align:center;
+    font-size:3rem;
     color:#D4AF37;
     margin-bottom:50px;
-    font-size:2.5rem;
 }
 
 .music-card{
@@ -229,7 +230,7 @@ padding:70px 0;
 @media (max-width:768px){
 
     .music-container{
-        padding-top:110px;
+        padding:110px 15px 60px;
     }
 
     .music-container h1{
