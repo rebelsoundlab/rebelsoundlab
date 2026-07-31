@@ -29,6 +29,8 @@ html{
     --shadow:0 10px 30px rgba(0,0,0,.45);
 }
 
+<script src="https://www.paypal.com/sdk/js?client-id=ba_p7LqQK2tQW6o3d2v8xYQq&components=hosted-buttons&disable-funding=venmo&currency=USD"></script>
+
 body{
     font-family:'Poppins',sans-serif;
     background:var(--bg);
@@ -243,6 +245,34 @@ section{
 
 .card p{
     color:var(--text);
+}
+
+.card h2{
+    color: var(--gold-light);
+    margin-bottom: 15px;
+}
+
+.card .price{
+    color: var(--gold);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.card ul{
+    color: var(--white);
+    padding-left: 20px;
+}
+
+.card li{
+    color: var(--white);
+    margin-bottom: 10px;
+}
+
+.popular{
+    color: var(--gold);
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
 /* ==========================
