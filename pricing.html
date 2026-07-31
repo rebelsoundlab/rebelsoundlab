@@ -3,121 +3,133 @@
 
 <head>
 
-<!-- Google tag -->
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Pricing | Rebel Sound Lab</title>
+<title>Services & Pricing | Rebel Sound Lab</title>
 
-<meta name="description" content="View Rebel Sound Lab services and pricing for original song lyrics, AI music production and professional website design packages.">
+<meta name="description" content="Professional Music Production, Song Lyrics, AI Music & Website Design by Rebel Sound Lab.">
+
+<link rel="icon" href="favicon.png">
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
 <link rel="stylesheet" href="css/style.css">
-<link rel="icon" type="image/png" href="favicon.png">
 
 <style>
 
 body{
-    background:#000;
-    color:#fff;
-    font-family:'Poppins',sans-serif;
+background:#000;
+color:#fff;
+font-family:'Poppins',sans-serif;
 }
 
 header{
-    text-align:center;
-    padding:80px 20px 50px;
+padding:100px 20px 50px;
+text-align:center;
 }
 
 header h1{
-    color:#D4AF37;
-    font-family:'Playfair Display',serif;
-    font-size:3rem;
+color:#D4AF37;
+font-family:'Playfair Display',serif;
+font-size:3rem;
+margin-bottom:15px;
 }
 
 header p{
-    color:#d8d8d8;
-    font-size:1.2rem;
+color:#ddd;
+font-size:1.1rem;
 }
 
-.card{
-    background:#151515;
-    border:1px solid rgba(212,175,55,.25);
-    border-radius:20px;
-    padding:35px;
-    margin-bottom:35px;
-    box-shadow:0 0 25px rgba(212,175,55,.08);
+.pricing-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+margin:50px auto;
 }
 
-.card h2{
-    color:#F5E6A9;
-    margin-bottom:15px;
+.price-card{
+background:#151515;
+border:1px solid rgba(212,175,55,.25);
+border-radius:20px;
+padding:35px;
+box-shadow:0 15px 35px rgba(0,0,0,.35);
+transition:.35s;
+}
+
+.price-card:hover{
+transform:translateY(-8px);
+border-color:#D4AF37;
+}
+
+.price-card h2{
+color:#F5E6A9;
+margin-bottom:10px;
+}
+
+.badge-popular{
+display:inline-block;
+background:#D4AF37;
+color:#000;
+padding:6px 14px;
+border-radius:50px;
+font-size:.8rem;
+font-weight:700;
+margin-bottom:15px;
 }
 
 .price{
-    color:#D4AF37;
-    font-size:2.4rem;
-    font-weight:700;
-    margin:20px 0;
+font-size:2.3rem;
+font-weight:700;
+color:#D4AF37;
+margin:20px 0;
 }
 
-.popular{
-    color:#D4AF37;
-    font-weight:700;
-    margin-bottom:12px;
-    text-transform:uppercase;
-    letter-spacing:1px;
+.price-card ul{
+padding-left:22px;
+margin-bottom:30px;
 }
 
-.card ul{
-    padding-left:25px;
-    margin-bottom:30px;
-}
-
-.card li{
-    color:#fff;
-    margin-bottom:12px;
-    line-height:1.8;
-    white-space:normal;
-    word-break:normal;
-    overflow-wrap:break-word;
-}
-
-.secure{
-    text-align:center;
-    margin-top:70px;
-}
-
-.secure h2{
-    color:#D4AF37;
-}
-
-.secure p{
-    color:#ccc;
+.price-card li{
+margin-bottom:12px;
+line-height:1.7;
 }
 
 .paypal-box{
-    display:inline-grid;
-    justify-items:center;
-    gap:.5rem;
+text-align:center;
+margin-top:20px;
 }
 
-@media (max-width:768px){
+.secure{
+text-align:center;
+margin-top:70px;
+}
+
+.secure h2{
+color:#D4AF37;
+}
+
+.buttons{
+text-align:center;
+margin:50px 0;
+}
+
+.buttons a{
+margin:10px;
+}
+
+@media(max-width:768px){
+
+header{
+padding:80px 20px 30px;
+}
 
 header h1{
-    font-size:2.3rem;
+font-size:2.3rem;
 }
 
-header p{
-    font-size:1rem;
-}
-
-.card{
-    padding:25px;
-}
-
-.price{
-    font-size:2rem;
+.price-card{
+padding:25px;
 }
 
 }
@@ -133,20 +145,20 @@ header p{
 <h1>Services & Pricing</h1>
 
 <p>
-Choose the perfect music or website package for your project.
+Choose the perfect package for your next creative project.
 </p>
 
 </header>
 
 <div class="container">
 
-<!-- ========================= -->
+<div class="pricing-grid">
+
 <!-- BASIC PACKAGE -->
-<!-- ========================= -->
 
-<div class="card">
+<div class="price-card">
 
-<h2>Basic Package</h2>
+<h2>🎵 Basic Package</h2>
 
 <div class="price">$19.99</div>
 
@@ -157,15 +169,13 @@ Choose the perfect music or website package for your project.
 <li>Delivery 1–2 Days</li>
 </ul>
 
-  <!-- PayPal - Basic Package -->
-
-<div>
+    <div class="paypal-box">
 
 <style>
 .pp-XQRFMV4Z2XC2W{
 text-align:center;
 border:none;
-border-radius:0.25rem;
+border-radius:.25rem;
 min-width:11.625rem;
 padding:0 2rem;
 height:2.625rem;
@@ -181,7 +191,7 @@ cursor:pointer;
 <form action="https://www.paypal.com/ncp/payment/XQRFMV4Z2XC2W"
 method="post"
 target="_blank"
-class="paypal-box">
+style="display:inline-grid;justify-items:center;gap:.5rem;">
 
 <input
 class="pp-XQRFMV4Z2XC2W"
@@ -206,17 +216,13 @@ style="height:14px;vertical-align:middle;">
 
 </div>
 
-<!-- ========================= -->
 <!-- STANDARD PACKAGE -->
-<!-- ========================= -->
 
-<div class="card">
+<div class="price-card">
 
-<div class="popular">
-Most Popular
-</div>
+<span class="badge-popular">Most Popular</span>
 
-<h2>Standard Package</h2>
+<h2>🎵 Standard Package</h2>
 
 <div class="price">$39.99</div>
 
@@ -227,15 +233,13 @@ Most Popular
 <li>Delivery 2–4 Days</li>
 </ul>
 
-<!-- PayPal - Standard Package -->
-
-<div>
+<div class="paypal-box">
 
 <style>
 .pp-M7K22N99PHR4Y{
 text-align:center;
 border:none;
-border-radius:0.25rem;
+border-radius:.25rem;
 min-width:11.625rem;
 padding:0 2rem;
 height:2.625rem;
@@ -251,7 +255,7 @@ cursor:pointer;
 <form action="https://www.paypal.com/ncp/payment/M7K22N99PHR4Y"
 method="post"
 target="_blank"
-class="paypal-box">
+style="display:inline-grid;justify-items:center;gap:.5rem;">
 
 <input
 class="pp-M7K22N99PHR4Y"
@@ -276,13 +280,11 @@ style="height:14px;vertical-align:middle;">
 
 </div>
 
-  <!-- ========================= -->
-<!-- PREMIUM PACKAGE -->
-<!-- ========================= -->
+    <!-- PREMIUM PACKAGE -->
 
-<div class="card">
+<div class="price-card">
 
-<h2>Premium Package</h2>
+<h2>🎵 Premium Package</h2>
 
 <div class="price">$59.99</div>
 
@@ -293,15 +295,13 @@ style="height:14px;vertical-align:middle;">
 <li>Priority Delivery 3–5 Days</li>
 </ul>
 
-<!-- PayPal - Premium Package -->
-
-<div>
+<div class="paypal-box">
 
 <style>
 .pp-UWSKENKMPERUW{
 text-align:center;
 border:none;
-border-radius:0.25rem;
+border-radius:.25rem;
 min-width:11.625rem;
 padding:0 2rem;
 height:2.625rem;
@@ -317,7 +317,7 @@ cursor:pointer;
 <form action="https://www.paypal.com/ncp/payment/UWSKENKMPERUW"
 method="post"
 target="_blank"
-class="paypal-box">
+style="display:inline-grid;justify-items:center;gap:.5rem;">
 
 <input
 class="pp-UWSKENKMPERUW"
@@ -342,23 +342,19 @@ style="height:14px;vertical-align:middle;">
 
 </div>
 
-<!-- ========================= -->
 <!-- BUSINESS WEBSITE -->
-<!-- ========================= -->
 
-<div class="card">
+<div class="price-card">
 
-<div class="popular">
-Website Design
-</div>
+<span class="badge-popular">Website Design</span>
 
-<h2>Business Website</h2>
+<h2>💻 Business Website</h2>
 
 <div class="price">$99.99</div>
 
 <ul>
 <li>5 Responsive Pages</li>
-<li>Modern Design</li>
+<li>Modern Premium Design</li>
 <li>Contact Form</li>
 <li>Mobile Friendly</li>
 <li>Free Deployment</li>
@@ -367,15 +363,13 @@ Website Design
 
 <p><strong>Rebel Sound Lab – Website Design</strong></p>
 
-<!-- PayPal - Business Website -->
-
-<div>
+<div class="paypal-box">
 
 <style>
 .pp-BMS6MUJ93D9XG{
 text-align:center;
 border:none;
-border-radius:0.25rem;
+border-radius:.25rem;
 min-width:11.625rem;
 padding:0 2rem;
 height:2.625rem;
@@ -391,7 +385,7 @@ cursor:pointer;
 <form action="https://www.paypal.com/ncp/payment/BMS6MUJ93D9XG"
 method="post"
 target="_blank"
-class="paypal-box">
+style="display:inline-grid;justify-items:center;gap:.5rem;">
 
 <input
 class="pp-BMS6MUJ93D9XG"
@@ -416,19 +410,15 @@ style="height:14px;vertical-align:middle;">
 
 </div>
 
-  <!-- ========================= -->
-<!-- PROFESSIONAL WEBSITE -->
-<!-- ========================= -->
+    <!-- PROFESSIONAL WEBSITE -->
 
-<div class="card">
+<div class="price-card">
 
-<div class="popular">
-Website Design
-</div>
+<span class="badge-popular">Website Design</span>
 
 <h2>💼 Professional Website</h2>
 
-<div class="price">Starting From <strong>$199</strong></div>
+<div class="price">Starting From $199</div>
 
 <ul>
 <li>Up to 10 Pages</li>
@@ -441,13 +431,13 @@ Website Design
 <li>Delivery 5–7 Days</li>
 </ul>
 
-<div>
+<div class="paypal-box">
 
 <style>
 .pp-SKSYSJV6KHZPN{
 text-align:center;
 border:none;
-border-radius:0.25rem;
+border-radius:.25rem;
 min-width:11.625rem;
 padding:0 2rem;
 height:2.625rem;
@@ -463,7 +453,7 @@ cursor:pointer;
 <form action="https://www.paypal.com/ncp/payment/SKSYSJV6KHZPN"
 method="post"
 target="_blank"
-class="paypal-box">
+style="display:inline-grid;justify-items:center;gap:.5rem;">
 
 <input
 class="pp-SKSYSJV6KHZPN"
@@ -488,9 +478,8 @@ style="height:14px;vertical-align:middle;">
 
 </div>
 
-<!-- ========================= -->
-<!-- SECURE PAYMENTS -->
-<!-- ========================= -->
+</div>
+<!-- End pricing-grid -->
 
 <div class="secure">
 
@@ -502,27 +491,23 @@ All payments are securely processed through PayPal.
 
 </div>
 
-<!-- ========================= -->
-<!-- ACTION BUTTONS -->
-<!-- ========================= -->
+<div class="buttons">
 
-<div class="text-center mt-5 mb-5">
-
-<a href="index.html"
-class="btn btn-warning btn-lg me-3">
-Back to Home
+<a href="index.html" class="btn btn-warning btn-lg">
+🏠 Back to Home
 </a>
 
-<a href="contact.html"
-class="btn btn-outline-light btn-lg">
-Contact Us
+<a href="contact.html" class="btn btn-outline-light btn-lg">
+📩 Contact Us
 </a>
 
 </div>
 
-</div><!-- /.container -->
+</div>
+<!-- End container -->
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
+
