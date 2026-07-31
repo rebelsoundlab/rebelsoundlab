@@ -29,8 +29,6 @@ html{
     --shadow:0 10px 30px rgba(0,0,0,.45);
 }
 
-<script src="https://www.paypal.com/sdk/js?client-id=ba_p7LqQK2tQW6o3d2v8xYQq&components=hosted-buttons&disable-funding=venmo&currency=USD"></script>
-
 body{
     font-family:'Poppins',sans-serif;
     background:var(--bg);
