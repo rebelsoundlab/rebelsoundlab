@@ -183,3 +183,61 @@ padding:70px 0;
 }
 
 }
+
+/* ==========================
+   Music Page
+========================== */
+
+.music-container{
+    padding-top:130px;
+    padding-bottom:80px;
+}
+
+.music-container h1{
+    text-align:center;
+    color:#D4AF37;
+    margin-bottom:50px;
+    font-size:2.5rem;
+}
+
+.music-card{
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(212,175,55,.25);
+    border-radius:18px;
+    padding:25px;
+    margin-bottom:30px;
+    backdrop-filter:blur(10px);
+    transition:all .35s ease;
+    box-shadow:0 10px 30px rgba(0,0,0,.35);
+}
+
+.music-card:hover{
+    transform:translateY(-8px);
+    border-color:#D4AF37;
+    box-shadow:0 20px 40px rgba(212,175,55,.25);
+}
+
+.music-card h2{
+    color:#F5E6A9;
+    margin-bottom:20px;
+}
+
+.music-card audio{
+    width:100%;
+}
+
+@media (max-width:768px){
+
+    .music-container{
+        padding-top:110px;
+    }
+
+    .music-container h1{
+        font-size:2rem;
+    }
+
+    .music-card{
+        padding:20px;
+    }
+
+}
