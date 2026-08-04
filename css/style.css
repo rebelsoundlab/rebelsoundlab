@@ -435,3 +435,16 @@ html{
 .elfsight-app-2e3fdd78-86ed-4323-9511-409140759ade h2 {
     color: #ffffff !important;
 }
+
+.page-header{
+    padding-top:90px;
+    margin-bottom:30px;
+}
+
+.page-header h1{
+    margin-bottom:15px;
+}
+
+.page-header p{
+    margin-bottom:0;
+}
