@@ -1,0 +1,432 @@
+/* =====================================================
+   Rebel Sound Lab - Premium Theme v4.0
+   ===================================================== */
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+:root{
+    --bg:#000;
+    --bg2:#111;
+    --card:rgba(255,255,255,.06);
+    --gold:#D4AF37;
+    --gold-light:#F5E6A9;
+    --white:#fff;
+    --text:#d8d8d8;
+    --border:rgba(255,255,255,.08);
+    --shadow:0 10px 30px rgba(0,0,0,.45);
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:var(--bg);
+    color:var(--white);
+    line-height:1.7;
+    overflow-x:hidden;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#111;
+}
+
+::-webkit-scrollbar-thumb{
+    background:var(--gold);
+    border-radius:20px;
+}
+
+/* Links */
+
+a{
+    text-decoration:none;
+    color:inherit;
+    transition:.3s;
+}
+
+a:hover{
+    color:var(--gold);
+}
+
+/* Images */
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+/* Container */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* Sections */
+
+section{
+    padding:90px 0;
+}
+
+/* ==========================
+   Premium Navbar
+========================== */
+
+.navbar{
+    background:rgba(0,0,0,.78);
+    backdrop-filter:blur(16px);
+    -webkit-backdrop-filter:blur(16px);
+    border-bottom:1px solid rgba(212,175,55,.15);
+    transition:.35s;
+}
+
+.navbar-brand{
+    font-weight:700;
+    color:#fff !important;
+}
+
+.navbar-brand span{
+    font-family:'Playfair Display',serif;
+    color:var(--gold);
+    font-size:1.6rem;
+}
+
+.nav-link{
+    color:#fff !important;
+    margin-left:15px;
+    font-weight:500;
+}
+
+.nav-link:hover,
+.nav-link.active{
+    color:var(--gold) !important;
+}
+
+/* ==========================
+   Hero
+========================== */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    background:
+    linear-gradient(rgba(0,0,0,.78),rgba(0,0,0,.82)),
+    url("../hero-banner.webp") center/cover no-repeat;
+}
+
+.hero h1{
+    font-family:'Playfair Display',serif;
+    font-size:4rem;
+    font-weight:700;
+    color:var(--gold);
+    margin-bottom:20px;
+    line-height:1.2;
+}
+
+.hero p{
+    color:#e6e6e6;
+    font-size:1.2rem;
+    max-width:760px;
+    margin:0 auto 35px;
+}
+
+/* Hero Buttons */
+
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:18px;
+    flex-wrap:wrap;
+}
+
+/* ==========================
+   Section Titles
+========================== */
+
+.section-title{
+    font-family:'Playfair Display',serif;
+    font-size:2.7rem;
+    color:var(--gold);
+    text-align:center;
+    margin-bottom:15px;
+}
+
+.section-subtitle{
+    text-align:center;
+    color:var(--text);
+    max-width:700px;
+    margin:0 auto 55px;
+}
+
+/* ==========================
+   Buttons
+========================== */
+
+.btn-gold{
+    display:inline-block;
+    padding:15px 38px;
+    background:var(--gold);
+    color:#000;
+    border-radius:50px;
+    font-weight:600;
+    transition:.35s;
+}
+
+.btn-gold:hover{
+    background:var(--gold-light);
+    color:#000;
+    transform:translateY(-4px);
+}
+
+.btn-outline{
+    display:inline-block;
+    padding:15px 38px;
+    border:2px solid var(--gold);
+    color:var(--gold);
+    border-radius:50px;
+    transition:.35s;
+}
+
+.btn-outline:hover{
+    background:var(--gold);
+    color:#000;
+    transform:translateY(-4px);
+}
+
+/* ==========================
+   Cards
+========================== */
+
+.card{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:22px;
+    padding:32px;
+    backdrop-filter:blur(12px);
+    box-shadow:var(--shadow);
+    transition:.35s;
+    height:100%;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    border-color:var(--gold);
+    box-shadow:0 20px 45px rgba(212,175,55,.18);
+}
+
+.card h3,
+.card h4{
+    color:var(--gold-light);
+    margin-bottom:15px;
+}
+
+.card p{
+    color:var(--text);
+}
+
+.card h2{
+    color: var(--gold-light);
+    margin-bottom: 15px;
+}
+
+.card .price{
+    color: var(--gold);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.card ul{
+    color: var(--white);
+    padding-left: 20px;
+}
+
+.card li{
+    color: var(--white);
+    margin-bottom: 10px;
+}
+
+.popular{
+    color: var(--gold);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* ==========================
+   Footer
+========================== */
+
+footer{
+    background:#0b0b0b;
+    border-top:1px solid rgba(212,175,55,.15);
+}
+
+footer a{
+    color:var(--gold);
+}
+
+footer a:hover{
+    color:var(--gold-light);
+}
+
+/* ==========================
+   Music Page
+========================== */
+
+.music-container{
+    max-width:900px;
+    margin:0 auto;
+    padding:140px 20px 80px;
+}
+
+.music-container h1{
+    text-align:center;
+    color:var(--gold);
+    font-size:3rem;
+    margin-bottom:50px;
+    font-family:'Playfair Display',serif;
+}
+
+.music-card{
+    background:var(--card);
+    border:1px solid rgba(212,175,55,.20);
+    border-radius:20px;
+    padding:28px;
+    margin-bottom:30px;
+    backdrop-filter:blur(10px);
+    box-shadow:var(--shadow);
+    transition:.35s;
+}
+
+.music-card:hover{
+    transform:translateY(-8px);
+    border-color:var(--gold);
+    box-shadow:0 20px 40px rgba(212,175,55,.20);
+}
+
+.music-card h2{
+    color:var(--gold-light);
+    margin-bottom:20px;
+}
+
+.music-card audio{
+    width:100%;
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media (max-width:768px){
+
+section{
+    padding:70px 0;
+}
+
+.hero h1{
+    font-size:2.5rem;
+}
+
+.hero p{
+    font-size:1.05rem;
+}
+
+.hero-buttons{
+    flex-direction:column;
+    gap:15px;
+}
+
+.btn-gold,
+.btn-outline{
+    width:100%;
+    max-width:300px;
+    text-align:center;
+}
+
+.section-title{
+    font-size:2rem;
+}
+
+.card{
+    padding:25px;
+}
+
+.music-container{
+    padding:110px 15px 60px;
+}
+
+.music-container h1{
+    font-size:2rem;
+}
+
+.music-card{
+    padding:20px;
+}
+
+.navbar-brand span{
+    font-size:1.3rem;
+}
+
+.nav-link{
+    margin-left:0;
+    padding:12px 0;
+    text-align:center;
+}
+
+}
+
+/* ==========================
+   Smooth Animation
+========================== */
+
+.card,
+.btn-gold,
+.btn-outline,
+.music-card{
+    transition:all .35s ease;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+/* ===========================
+   Welcome Section
+=========================== */
+
+.welcome-section{
+    background:#0b0b0b;
+}
+
+.welcome-box{
+    max-width:850px;
+    margin:auto;
+}
+
+.welcome-text{
+    color:#d7d7d7;
+    font-size:1.1rem;
+    line-height:1.9;
+    margin-top:20px;
+}
