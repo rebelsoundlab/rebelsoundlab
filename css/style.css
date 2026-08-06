@@ -74,9 +74,10 @@ img{
 /* Container */
 
 .container{
-    width:90%;
     max-width:1200px;
-    margin:auto;
+    margin:0 auto;
+    padding-left:15px;
+    padding-right:15px;
 }
 
 /* Sections */
@@ -344,6 +345,16 @@ section{
     padding:70px 0;
 }
 
+.container{
+    padding-left:15px;
+    padding-right:15px;
+}
+
+.row{
+    margin-left:0;
+    margin-right:0;
+}
+   
 .hero{
     background-position: 10% center;
 }
