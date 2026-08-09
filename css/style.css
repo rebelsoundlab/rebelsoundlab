@@ -558,3 +558,65 @@ html{
         font-size: 48px;
     }
 }
+
+/* =====================================================
+   FIX OVERSIZED NAVBAR
+   ===================================================== */
+
+nav.navbar {
+    height: auto !important;
+    min-height: 0 !important;
+    padding: 12px 0 !important;
+}
+
+nav.navbar .container {
+    height: auto !important;
+    min-height: 60px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+nav.navbar .navbar-brand {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+nav.navbar .navbar-collapse {
+    height: auto !important;
+}
+
+nav.navbar .navbar-nav {
+    height: auto !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+
+/* CONTACT CONTENT */
+.contact-page {
+    padding-top: 40px !important;
+    padding-bottom: 60px !important;
+}
+
+.contact-page h1 {
+    display: block !important;
+    visibility: visible !important;
+    position: relative !important;
+    z-index: 10 !important;
+}
+
+@media (max-width: 768px) {
+
+    nav.navbar {
+        min-height: 80px !important;
+        padding: 10px 0 !important;
+    }
+
+    nav.navbar .container {
+        min-height: 60px !important;
+    }
+
+    .contact-page {
+        padding-top: 35px !important;
+    }
+}
