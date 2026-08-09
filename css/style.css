@@ -620,3 +620,43 @@ nav.navbar .navbar-nav {
         padding-top: 35px !important;
     }
 }
+
+/* =====================================================
+   CONTACT PAGE - FINAL HEADER FIX
+   ===================================================== */
+
+.contact-body .navbar {
+    padding: 10px 0 !important;
+    min-height: 0 !important;
+}
+
+.contact-body .navbar .container {
+    min-height: 60px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.contact-body .contact-page {
+    padding-top: 35px !important;
+}
+
+.contact-body .contact-page h1 {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    color: #f5b942 !important;
+    text-align: center !important;
+    margin-top: 0 !important;
+    margin-bottom: 20px !important;
+}
+
+@media (max-width: 768px) {
+
+    .contact-body .navbar {
+        padding: 10px 0 !important;
+    }
+
+    .contact-body .contact-page {
+        padding-top: 30px !important;
+    }
+}
