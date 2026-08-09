@@ -671,3 +671,9 @@ nav.navbar .navbar-nav {
         margin-top: 30px !important;
     }
 }
+
+   @media (max-width: 768px) {
+    .contact-page {
+        padding-top: 70px !important;
+    }
+}
