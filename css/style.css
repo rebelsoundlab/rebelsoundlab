@@ -652,9 +652,10 @@ nav.navbar .navbar-nav {
 
 @media (max-width: 768px) {
 
-    .contact-body .navbar {
-        padding: 10px 0 !important;
+    .contact-body .contact-page {
+        padding-top: 55px !important;
     }
+}
 
   .contact-body .contact-page {
     padding-top: 80px !important;
